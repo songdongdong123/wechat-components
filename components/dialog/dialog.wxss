@@ -1,0 +1,43 @@
+/* components/dialog/dialog.wxss */
+.dialog{
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog_container{
+  width:650rpx;
+  height:450rpx;
+  margin:0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  position: relative;
+}
+.dialog_title{
+  text-align: center;
+  padding-top: 20rpx;
+}
+.dialog_msg{
+  text-align: center;
+  font-size: 45rpx;
+  margin-top: 100rpx;
+}
+.btn_groups{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30rpx;
+  width:100%;
+}
+.btn_groups>button{
+  width:300rpx;
+}
+.confirm{
+  background: #339999;
+}

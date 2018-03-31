@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+ <button bindtap='toogleDialog'>显示弹窗组件</button>
+ <!-- 在父组件中触发 -->
+ <!-- bind:confirmEvent="myevent" -->
+ <dialog
+  wx:if="{{isShow}}"
+  id="dialog"
+  bind:confirmEvent="myevent"
+  bind:confirmThis="confirmThis"
+ ></dialog> 
+</view>
